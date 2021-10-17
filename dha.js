@@ -234,7 +234,7 @@ module.exports = dha = async (dha, mek) => {
         const isLevelingOn = isGroup ? _leveling.includes(from) : false
         const isMuted = isGroup ? mute.includes(from) : false
         const isAntiLink = isGroup ? antilink.includes(from) : false
-        const isWelkom = isGroup ? welkom.includes(from) : false
+        const isWelkom = isGroup ? welkom.includes(from) : true
         
         // here button function
         selectedButton = (type == 'buttonsResponseMessage') ? mek.message.buttonsResponseMessage.selectedButtonId : ''
