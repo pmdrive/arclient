@@ -82,7 +82,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = 'CREATOR BOT\©KurrXd'//GANTI NAMA KAMU BEP
+fake = 'CREATOR BOT\©AkbarBotz'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -532,7 +532,7 @@ module.exports = dha = async (dha, mek) => {
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
         const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 300, status: 200, thumbnail: fakeimage, surface: 200, message: fake, orderTitle: 'dha', sellerJid: '0@s.whatsapp.net'} } }
         const ftext = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `*Hai ${pushname}👋*\n  ${moment().utcOffset('+0700').format('HH:mm:ss')} ${moment.tz('Asia/Jakarta').format('DD/MM/YYYY')}`,"title": `Hmm`,'jpegThumbnail': fs.readFileSync('./media/ganteng.jpg')}}}
-        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/ganteng.jpg`)},"title": `HALLO...${pushname}JANGAN LUPA DI ORDER`,"description": "KURRXD KANG TOLOL", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "DHA BOTZ","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/ganteng.jpg`)},"title": `HALLO...${pushname}JANGAN LUPA DI ORDER`,"description": "Akbar Cakep KyAa", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "DHA BOTZ","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
 
       // Anti link
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
@@ -837,7 +837,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
         case 'menu':
         case 'help':
-        menu =`Hai Kak.....\n*${pushname}*\n\`\`\`Saya KURRXD BOTZ,SENANG BISA BERTEMU DENGANMU HARI INI\`\`\`
+        menu =`Hai Kak.....\n*${pushname}*\n\`\`\`Saya AKBAR BOTZ,SENANG BISA BERTEMU DENGANMU HARI INI\`\`\`
         
 𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧
 ❏ NAMA : *${pushname}*
@@ -846,10 +846,10 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
 
 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
-❏ NAMA : *KURRXD BOTZ*
-❏ API : @6281220670449
-❏ OWNER : *©KurrXd*
-❏ API : *@6281220670449*
+❏ NAMA : *Akbar BOTZ*
+❏ API : @62895610720367
+❏ OWNER : *©AkbarBotz*
+❏ API : *@62895610720367*
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
 ❏ PREIFIX : *『${prefix}』*
@@ -1095,14 +1095,14 @@ Makernya banyak tu kalian masukan aja namanya sendiri
 *▢ ${prefix}babi*
 *▢ ${prefix}cekganteng*
 *▢ ${prefix}cekcantik*
-©𝑪𝒓𝒆𝒂𝒕𝒐𝒓 ©kurrtod`
+©𝑪𝒓𝒆𝒂𝒕𝒐𝒓 ©AkbarBotz`
                buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: '𝗔𝗟𝗟 𝗠𝗘𝗡𝗨'},type:1},{buttonId: `${prefix}rules`,buttonText:{displayText: '𝗥𝗨𝗟𝗘𝗦'},type:1},{buttonId:`${prefix}store`,buttonText:{displayText:'TOP UP'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/yudha.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/yudha.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '\`\`\`MAU BELI SC INI HUBUNGIN KURRXD WA 6281220670449\`\`\`', imageMessage: imageMsg,
+               footerText: '\`\`\`Follow IG Ownernya: instagram.com/akbarr.id\`\`\`', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1675,7 +1675,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'belipremium':
        case 'buypremium':
        case 'sewabot':
-              gopeynya = 'https://i.postimg.cc/c47BWZGD/IMG-20210929-WA0065.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*── 「 PRICE LIST 」 ──*
 
 *Tarif Premium User adalah 10K Perbulan*
@@ -1684,7 +1684,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 ♲ *Dapat Informasi Lebih dulu akan Update, Nomor Bot Baru (Jika Terbanned), dan Lainnya*
 
 *Jika Tertarik,Kalian Bisa Bayar Melalui Metode Pembayaran di Bawah:*
-*Dana : 081220670449*
+*Dana : 0895610720367*
 *Gopay : scan diatas*
 *Atau Gopay pada gambar diatas*
 
@@ -1695,10 +1695,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break             
 //------------------< store menu >-------------------  
 case 'bayar':
-gopeynya = 'https://i.postimg.cc/c47BWZGD/IMG-20210929-WA0065.jpg'
+gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
 teksnya = ` *「PAYMENT」*
 • GOPAY : scan diatas
-• DANA : 081220670449
+• DANA : 0895610720367
 • OVO : scan diatas
 • QRISS DI ATAS 
 ━━━━━━━━━━━━━━━━━━━━`
@@ -1706,7 +1706,7 @@ teksnya = ` *「PAYMENT」*
               break
  
 case 'dmff':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「DIAMOND FREEFIRE」*
 ━━━━━━━━━━━━━━━━━━━━
 • *10 DIAMOND = Rp 2.000*
@@ -1741,11 +1741,11 @@ JIKA BERMINAT
 #order
 ATAU HUBUNGIN HUB :
    *(*
-wa.me/6281220670449`
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  case 'dmml':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「DIAMOND MOBA」*
 ━━━━━━━━━━━━━━━━━━━━
 • *12 DIAMOND = Rp 5.000*
@@ -1775,12 +1775,12 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6281220670449`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'cpcod':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「CP CALL OF DUTTY」*
 ━━━━━━━━━━━━━━━━━━━━
 • *26 + 5 CP = Rp 7.000*
@@ -1798,12 +1798,12 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6281220670449`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'cashpb':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「CASH POIN BLANK」*
 ━━━━━━━━━━━━━━━━━━━━
 • *1200 PB CASH = Rp 11.000*
@@ -1819,12 +1819,12 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6281220670449`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: toko, caption: teksnya })
               break
 case 'catcoin':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「CAT COIN RAGNAROK」*
 ━━━━━━━━━━━━━━━━━━━━
 • *1 BIG CAT COIN = Rp 6.000*
@@ -1842,12 +1842,12 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6282287486762`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'candysausage':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「CANDY SAUSAGE」*
 ━━━━━━━━━━━━━━━━━━━━
 • *60 CANDY SAUSAGE = Rp 16.000*
@@ -1865,12 +1865,12 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6282287486762`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'ucpubg':
-              gopeynya = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
+              gopeynya = 'https://bot.rave.my.id/scanqris.jpeg'
               teksnya = `*「UC PUBG」*
 ━━━━━━━━━━━━━━━━━━━━
 • *25 UC = Rp 8.000*
@@ -1899,8 +1899,8 @@ _SEBELUM PEMBELIAN_
 JIKA BERMINAT 
 #order
 ATAU HUBUNGIN HUB :
-   *©KurrXd*
-wa.me/6281220670449`
+   *©AkbarBotz*
+wa.me/62895610720367`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break 
 			case 'order':
@@ -2167,7 +2167,7 @@ case 'tiktok':
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
               buttons = [{buttonId: `${prefix}tiktoknowm ${q}`,buttonText:{displayText: `🎥 Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Mp3'},type:1}]
               imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/yudha.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/yudha.jpg`)})).imageMessage
-              buttonsMessage = {footerText:'Jangan Lupa Subscribe Yt DHA BOTZ\n Helpme tu 1k subscriber', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Jangan Lupa Follow IG: akbarr.id\n Helpme tu 1k subscriber', imageMessage: imageMsg,
               contentText:`Silahkan pilihan media yg mau di download kak:v`,buttons,headerType:4}
               prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               dha.relayWAMessage(prep)
@@ -2752,7 +2752,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               .then(async (body) => {
                asupann = body.split('\n')
                asupanx = asupann[Math.floor(Math.random() * asupann.length)]
-               sendMediaURL(from, `http://sansekai.my.id/ptl_repost/${asupanx}`, '\`\`\`ASUPAN BRO GUA DAPAT DARI LORD ©KurrXd\`\`\`')
+               sendMediaURL(from, `http://sansekai.my.id/ptl_repost/${asupanx}`, '\`\`\`ASUPAN BRO GUA DAPAT DARI LORD ©AkbarBotz\`\`\`')
                console.log('Success sending video!')
 })
               .catch(async (err) => {
@@ -3303,7 +3303,7 @@ break
               bokep = body.slice(1)
               const bo =['https://www.mediafire.com/download/8hnhjcf3pseubgy','https://www.mediafire.com/download/cty9phda3d1s62u','https://www.mediafire.com/download/8hnhjcf3pseubgy']
               const kep = bo[Math.floor(Math.random() * bo.length)]
-              dha.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *©KurrXd* DOSA TANGGUNG SENDIRI🗿`})
+              dha.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *AkbarBotz* DOSA TANGGUNG SENDIRI🗿`})
               break
                 case 'xnxx':
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
@@ -3532,10 +3532,10 @@ break
               textImg(`${runtime(process.uptime())}`)
               break
        case 'youtube': 
-              reply(`Jangan Lupa Subscribe YT Owner:\n https://youtu.be/Wgi3uOGlmYs`)
+              reply(`Jangan Lupa Subscribe YT Owner:\n https://youtube.com/c/AkbarRamadhan`)
               break
        case 'masukandata':
-             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©KurrXd*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6282287486762`)
+             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©AkbarBotz*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/62895610720367`)
               break
       case 'ping':
       case 'speed':
@@ -4240,8 +4240,8 @@ case 'linkgc':
                reply('Okeh nyala')
                break
         case 'info':  // Jangan Di Ubah Plise
-               urlinfo = 'https://i.postimg.cc/L4wjFw1q/IMG-20210929-WA0233.jpg'
-               thankslort = `*━━━━INFO BOT━━━━*\n*O>Nama : KurrXd Botz*\n*O>JAM : ${moment().utcOffset('+0700').format('HH:mm')}*\n*O>DATE : ${moment.tz('Asia/Jakarta').format('DD/MM')}*\n*O>Tipe : Node Js*\n*O>Versi : 3.3*\n*━━━━━━━━━━━━━━━*`
+               urlinfo = 'https://bot.rave.my.id/scanqris.jpeg'
+               thankslort = `*━━━━INFO BOT━━━━*\n*O>Nama : Akbar Botz*\n*O>JAM : ${moment().utcOffset('+0700').format('HH:mm')}*\n*O>DATE : ${moment.tz('Asia/Jakarta').format('DD/MM')}*\n*O>Tipe : Node Js*\n*O>Versi : 3.3*\n*━━━━━━━━━━━━━━━*`
              dha.sendMessage(from, await getBuffer(urlinfo), image, {quoted: mek, caption: thankslort })
              break
       case 'get':
@@ -4629,19 +4629,19 @@ case 'coffe':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 081220670449\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`DANA : 0895610720367\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
            case 'gopay':
-             reply(`GOPAY : 081220670449\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`GOPAY : 0895610720367\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break  
          case 'pulsa':
-             reply(`PULSA : 081220670449\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`PULSA : 0895610720367\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break              
       case 'infoig':
-             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/kurrsadboy`)
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/akbarr.id`)
              break
       case 'grupbot':
-             reply('https://chat.whatsapp.com/EymjfVUattCJSGg58WPvrd')
+             reply('https://chat.whatsapp.com/yt')
              break
       case 'ownermenu':
              dha.sendMessage(from, ownerMenu(prefix), MessageType.text, {quoted: troli})
